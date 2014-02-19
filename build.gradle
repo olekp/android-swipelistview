@@ -4,7 +4,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:0.5.+'
+    classpath 'com.android.tools.build:gradle:0.8.+'
   }
 }
 
@@ -19,4 +19,9 @@ allprojects {
   tasks.withType(Compile) {
     options.encoding = "UTF-8"
   }
+}
+
+ext {
+    compileSdkVersion = 19
+    buildToolsVersion = "19.0.1"
 }
